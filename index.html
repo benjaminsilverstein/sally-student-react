@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Sally Student</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      .img {
+         width: 400px;
+         height: auto;
+      }
+      </style>
+   </head>
+   <body>
+      
+   <div id="application-root"></div>
+   <script
+   src="https://unpkg.com/babel-standalone@6/babel.min.js">
+ </script>
+   <script
+   src="https://unpkg.com/react@16/umd/react.development.js">
+ </script>
+ <script
+   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+ </script>
+ <script type="text/babel">
+
+
+
+
+ function App(props) {
+  return (
+     <div className="resume">
+   <header>
+      <h1>Sally Student</h1>
+      <p>I code things like resumes.</p>
+      <hr />
+    </header>
+    <main>
+    <section>
+    <address>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Ilana" className="img" />
+      <ul>
+        <li>Email: <a href="mailto:sally@tacotown.com">sally@tacotown.com</a></li>
+        <li>Mobile: 111-111-1111</li>
+      </ul>
+    </address>
+    </section>
+      <section>
+        <header>
+        <h3>Education</h3>
+        </header>
+       <ul>
+        <li>Clown college (2019)</li>
+        <li>Thinkful (2020)</li>
+      </ul>
+      </section>
+      <section>
+        <header>
+        <h3>Work history</h3>
+        </header>
+        <ul>
+          <li>Clown College | Head Clown | (2020-2023) | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis, enim non efficitur imperdiet, purus ipsum suscipit ipsum, bibendum finibus massa orci sed felis. Donec a ultricies ipsum. Donec semper dictum massa, eget tempus quam mattis eu. Suspendisse lorem tellus, sagittis vel efficitur vitae, scelerisque in risus.</li>
+          <li>ClownsRUs | Sales Executive | (2023-2030) | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis, enim non efficitur imperdiet, purus ipsum suscipit ipsum, bibendum finibus massa orci sed felis. Donec a ultricies ipsum. Donec semper dictum massa, eget tempus quam mattis eu. Suspendisse lorem tellus, sagittis vel efficitur vitae, scelerisque in risus.</li>
+      </ul>
+      </section> 
+    </main>
+    </div>
+  );
+}
+
+   ReactDOM.render(
+  <App />,
+  document.querySelector('#application-root')
+);
+
+ </script>
+   </body>
+</html>
